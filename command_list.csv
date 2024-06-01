@@ -1,0 +1,29 @@
+    1  git config --global user.name "nosegrino"
+    2  git config --global user.email "nzavadskyi@gmail.com"
+    3  git clone https://github.com/nosegrino/HW_10.git
+    4  cd HW_10/
+    5  touch text_igoner.txt
+    6  nano .gitignore
+    7  git status
+    8  nano text_igoner.txt 
+    9  git status
+   10  nano text_igoner.txt 
+   11  rm text_igoner.txt 
+   12  git status
+   13  git add .gitignore
+   14  git commit -m ".gitignore modified"
+   15  touch main_test.txt
+   16  git add main_test.txt 
+   17  git commit -m "main_test.txt added"
+   18  git checkout -b develop
+   19  touch develop_test.txt
+   20  git add develop_test.txt 
+   21  git commit -m "develop_test.txt added"
+   22  nano develop_test.txt 
+   23  git status
+   24  git add develop_test.txt 
+   25  git commit -m "develop_test.txt modified"
+   26  git checkout main
+   27  git merge develop
+   28  git log
+   29  history > command_list.csv
